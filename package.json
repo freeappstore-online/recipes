@@ -1,0 +1,24 @@
+{
+  "name": "freerecipesapp",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": {
+    "node": ">=22"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "scripts": {
+    "dev": "pnpm --filter @recipes/web dev",
+    "build": "pnpm --filter @recipes/web build",
+    "preview": "pnpm --filter @recipes/web preview",
+    "typecheck": "pnpm --filter @recipes/web exec tsc -b",
+    "test": "pnpm --filter @recipes/web test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeappstore-online/recipes.git"
+  }
+}
